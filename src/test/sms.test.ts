@@ -1,8 +1,7 @@
 import dotenv from "dotenv"
-import { IConfig } from "../src/common";
-import { Sender } from "../src/sender";
-import { SMS } from "../src/sms";
-import { IMessageData } from "../src/sms/interfaces";
+import { IConfig } from "../common";
+import { SMS } from "../sms";
+import { IMessageData } from "../sms/interfaces";
 
 dotenv.config()
 

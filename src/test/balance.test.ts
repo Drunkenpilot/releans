@@ -1,6 +1,6 @@
 import dotenv from "dotenv"
-import { IConfig } from "../src/common";
-import { Balance } from "../src/balance";
+import { IConfig } from "../common";
+import { Balance } from "../balance";
 
 dotenv.config()
 

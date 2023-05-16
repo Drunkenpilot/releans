@@ -1,6 +1,6 @@
 import dotenv from "dotenv"
-import { IConfig } from "../src/common";
-import { Sender } from "../src/sender";
+import { IConfig } from "../common";
+import { Sender } from "../sender";
 
 dotenv.config()
 

@@ -1,7 +1,7 @@
 import dotenv from "dotenv"
-import { IConfig } from "../src/common";
-import { IOTPSendData, IOTPVerifyData } from "../src/otp/interfaces";
-import { OTP } from "../src/otp";
+import { IConfig } from "../common";
+import { IOTPSendData, IOTPVerifyData } from "../otp/interfaces";
+import { OTP } from "../otp";
 
 dotenv.config()
 
