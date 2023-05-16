@@ -1,5 +1,6 @@
 # [![Releans Logo](https://releans.com/img/logos/logo-57.png) Releans](https://releans.com/)
 A node library to implement Releans SMS API.
+License MIT
 
 ***
 
