@@ -9,11 +9,86 @@ License MIT
 ***
 
 ### SMS API
-#### Send Single Message
+[Read doc](https://docs.releans.com/sms-api)
+#### Send a message
+```typescript
+        const config: IConfig = {
+            apiKey: 'your-key',
+        }
+        const data: IMessageData = {
+            sender: 'SenderName',
+            mobile: 'E164FormatNumber',
+            content: 'Your content'
+        };
+        const sms = new SMS(config);
+        const result = await sms.send(data);
 
-#### Send multiple Message
+        if (result.data) {
+            console.dir(result.data)
+        }
+
+        if(result.error) {
+            console.log(result.error);
+        }
+```
+#### Retrieve all messages
+```typescript
+        const config: IConfig = {
+            apiKey: 'your-key',
+        }
+ 
+        const sms = new SMS(config);
+        const result = await sms.retrieveAll();
+
+        if (result.data) {
+            console.dir(result.data)
+        }
+
+        if(result.error) {
+            console.log(result.error);
+        }
+```
+
+#### Retrieve messages by date
+```typescript
+        const config: IConfig = {
+            apiKey: 'your-key',
+        }
+        const date = '2023-05-16' //'yyyy-MM-dd'
+        const sms = new SMS(config);
+        const result = await sms.retrieveByDate(date);
+
+        if (result.data) {
+            console.dir(result.data)
+        }
+
+        if(result.error) {
+            console.log(result.error);
+        }
+```
+
+#### Retrieve a message by messageId
+```typescript
+        const config: IConfig = {
+            apiKey: 'your-key',
+        }
+        const messageId = 12345678
+        const sms = new SMS(config);
+        const result = await sms.retrieveByMessageId(messageId);
+
+        if (result.data) {
+            console.dir(result.data)
+        }
+
+        if(result.error) {
+            console.log(result.error);
+        }
+```
+
+***
 
 ### Balance API
+[Read doc](https://docs.releans.com/balance)
 ```typescript
         const config: IConfig = {
             apiKey: 'your-key',
