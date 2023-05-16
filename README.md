@@ -158,3 +158,6 @@ License MIT
             console.log(result.error);
         }
 ```
+
+### Bug report
+<https://github.com/Drunkenpilot/releans/issues>
