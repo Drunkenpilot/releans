@@ -12,6 +12,7 @@ License MIT
 [Read doc](https://docs.releans.com/sms-api)
 #### Send a message
 ```typescript
+        const { SMS } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -33,6 +34,7 @@ License MIT
 ```
 #### Retrieve all messages
 ```typescript
+        const { SMS } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -51,6 +53,7 @@ License MIT
 
 #### Retrieve messages by date
 ```typescript
+        const { SMS } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -69,6 +72,7 @@ License MIT
 
 #### Retrieve a message by messageId
 ```typescript
+        const { SMS } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -87,9 +91,58 @@ License MIT
 
 ***
 
+### OTP / Verify API
+[Read doc](https://docs.releans.com/verify)
+#### Send OTP Code
+```typescript
+        const { OTP } from 'releans';
+        const config: IConfig = {
+            apiKey: 'your-key',
+        }
+         const data: IOTPSendData = {
+            sender: 'Sender Name',
+            mobile: 'E164FormatNumber',
+            channel: 'sms' // sms or voice
+        };
+        const otp = new OTP(config);
+        const result = await otp.send(data);
+
+        if (result.data) {
+            console.dir(result.data)
+        }
+
+        if(result.error) {
+            console.log(result.error);
+        }
+```
+#### Verify OTP Code
+```typescript
+        const { OTP } from 'releans';
+        const config: IConfig = {
+            apiKey: 'your-key',
+        }
+         const data: IOTPVerifyData = {
+            mobile: 'E164FormatNumber',
+            code: '123456'
+        };
+        const otp = new OTP(config);
+        const result = await otp.verify(data);
+
+        if (result.data) {
+            console.dir(result.data)
+        }
+
+        if(result.error) {
+            console.log(result.error);
+        }
+```
+
+***
+
 ### Balance API
 [Read doc](https://docs.releans.com/balance)
 ```typescript
+        const { Balance } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }

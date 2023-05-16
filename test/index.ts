@@ -1,4 +1,5 @@
 import { BalanceTest } from "./balance.test";
+import { OTPTest } from "./otp.test";
 import { SenderTest } from "./sender.test";
 import { SMSTest } from "./sms.test";
 
@@ -25,3 +26,10 @@ const sms = new SMSTest();
 // sms.retrieveByMessageId();
 // sms.send();
 // sms.batchSend();
+
+/**
+ * @OTP
+ */
+const otp = new OTPTest();
+// otp.send();
+// otp.verify();
