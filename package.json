@@ -1,0 +1,32 @@
+{
+  "name": "releans",
+  "version": "1.0.0",
+  "description": "A node library to implement Releans SMS Api Service",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Drunkenpilot/releans.git"
+  },
+  "keywords": [
+    "Releans",
+    "SMS",
+    "API",
+    "Verify",
+    "(SMS",
+    "Voice)",
+    "Sender",
+    "ID",
+    "sms",
+    "gateway",
+    "whatsapp"
+  ],
+  "author": "Beta Life",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Drunkenpilot/releans/issues"
+  },
+  "homepage": "https://github.com/Drunkenpilot/releans#readme"
+}
