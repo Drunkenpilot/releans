@@ -12,7 +12,7 @@ License MIT
 [Read doc](https://docs.releans.com/sms-api)
 #### Send a message
 ```typescript
-        const { SMS } from 'releans';
+        import { SMS } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -34,7 +34,7 @@ License MIT
 ```
 #### Retrieve all messages
 ```typescript
-        const { SMS } from 'releans';
+        import { SMS } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -53,7 +53,7 @@ License MIT
 
 #### Retrieve messages by date
 ```typescript
-        const { SMS } from 'releans';
+        import { SMS } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -72,7 +72,7 @@ License MIT
 
 #### Retrieve a message by messageId
 ```typescript
-        const { SMS } from 'releans';
+        import { SMS } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -95,7 +95,7 @@ License MIT
 [Read doc](https://docs.releans.com/verify)
 #### Send OTP Code
 ```typescript
-        const { OTP } from 'releans';
+        import { OTP } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -117,7 +117,7 @@ License MIT
 ```
 #### Verify OTP Code
 ```typescript
-        const { OTP } from 'releans';
+        import { OTP } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
@@ -142,7 +142,7 @@ License MIT
 ### Balance API
 [Read doc](https://docs.releans.com/balance)
 ```typescript
-        const { Balance } from 'releans';
+        import { Balance } from 'releans';
         const config: IConfig = {
             apiKey: 'your-key',
         }
