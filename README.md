@@ -147,8 +147,8 @@ License MIT
             apiKey: 'your-key',
         }
  
-        const barcode = new Balance(config);
-        const result = await barcode.retrieve();
+        const balance = new Balance(config);
+        const result = await balance.retrieve();
 
         if (result.data) {
             console.dir(result.data)

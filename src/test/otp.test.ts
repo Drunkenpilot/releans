@@ -16,8 +16,8 @@ export class OTPTest {
 
         config.apiKey = APIKEY ?? '';
         const data: IOTPSendData = {
-            sender: 'xx',
-            mobile: '',
+            sender: 'XX',
+            mobile: 'E164',
         };
         const otp = new OTP(config);
         const result = await otp.send(data);
@@ -40,7 +40,7 @@ export class OTPTest {
 
         config.apiKey = APIKEY ?? '';
         const data: IOTPVerifyData = {
-            mobile: 'xx',
+            mobile: '+E164',
             code: '123456'
         };
         const otp = new OTP(config);

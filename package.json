@@ -1,6 +1,6 @@
 {
   "name": "releans",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A node library to implement Releans SMS Api Service",
   "main": "dist/index.js",
   "scripts": {

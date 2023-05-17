@@ -46,10 +46,16 @@ export interface IOTPSentReport {
 
 export interface IOTPVerifyReport {
     /**
-     * @example "Your message sent."
+     * @example "Verified"
      */
     message: string;
+    /**
+     * @example 63, 21
+     */
     code: number;
+    /**
+     * @example 200, 422
+     */
     status: number;
     /**
      * @description Format mobile number with a + and a country code, (E.164 format).
