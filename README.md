@@ -8,6 +8,14 @@ License MIT
 
 ***
 
+### Installation
+
+```javascript
+npm i releans
+```
+
+***
+
 ### SMS API
 [Read doc](https://docs.releans.com/sms-api)
 #### Send a message
